@@ -4,6 +4,7 @@ import {TopNews} from "@/components/topNews/topNews.tsx";
 import {Container} from "@/components/container/container.tsx";
 import NewsCard from './components/newsCard/NewsCard';
 import {NewsList} from "@/components/newsList/NewsList.tsx";
+import {NewsSlider} from "@/components/newsSlider/NewsSlider.tsx";
 
 function App() {
 
@@ -20,8 +21,7 @@ function App() {
                                         <h1 className="mr-2">Актуально</h1>
                                     </div>
                                     <div className={'flex items-center gap-4 flex-wrap'}>
-                                        <NewsCard/>
-                                        <NewsCard/>
+                                        <NewsSlider />
                                     </div>
                                 </section>
                                 <section className={'mt-10 w-full'}>
