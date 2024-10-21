@@ -33,7 +33,7 @@ export const NewsSlider = () => {
     };
 
     return (
-        <div className="relative flex items-start justify-center gap-4 w-full" style={{ boxShadow: '0px 0px 6px 4px rgba(0, 0, 0, 0.06)' }}>
+        <div className="relative flex items-start justify-center gap-4 w-full " style={{ boxShadow: '0px 0px 6px 4px rgba(0, 0, 0, 0.06)' }}>
             <button
                 className="absolute left-0 top-[50%] w-[50px] rounded  transform -translate-y-[50%] bg-black opacity-50 hover:opacity-60 z-50"
                 onClick={handlePrevSlide}
@@ -46,10 +46,10 @@ export const NewsSlider = () => {
                     <img
                         src={slides[currentSlide].imageUrl}
                         alt={`Slide ${currentSlide + 1}`}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full "
                     />
                     <div
-                        className="w-[300px] h-full flex flex-col justify-between items-center  p-4 absolute bottom-0 right-[80px] bg-white">
+                        className="w-[300px] h-full flex flex-col justify-between items-center  p-4 absolute bottom-0 right-[80px] bg-white ">
                         <div>
                             <h2 className="text-[20px] mb-2">{slides[currentSlide].title}</h2>
                             <p className="text-[16px]">{slides[currentSlide].text}</p>

@@ -13,6 +13,8 @@ import img4 from '/src/assets/news/14.jpg'
 import img5 from '/src/assets/news/15.jpg'
 import img6 from '/src/assets/news/16.jpg'
 import {NewsLine} from "@/components/newsLine/NewsLine.tsx";
+import {FreshNews} from "@/components/freshNews/FreshNews.tsx";
+import {array} from "@/components/freshNews/array.ts";
 
 function App() {
 
@@ -22,29 +24,29 @@ function App() {
             <main className={'pt-4'}>
                 <TopNews/>
                 <Container>
-                        <div className={'flex items-start justify-between mt-10'}>
-                            <div>
-                                <section className={' w-full'}>
-                                    <div className="flex items-center font-bold text-2xl mb-4">
-                                        <h1 className="mr-2">Актуально</h1>
-                                    </div>
-                                    <div className={'flex items-center gap-4 flex-wrap'}>
-                                        <NewsSlider />
-                                    </div>
-                                </section>
-                                <section className={'mt-10 w-full'}>
-                                    <div className="flex items-center font-bold text-2xl mb-4">
-                                        <h1 className="mr-2">Дагестан</h1>
-                                    </div>
-                                    <div className={'flex items-center gap-4 flex-wrap'}>
-                                        <NewsCard img={img1}/>
-                                        <NewsCard img={img2}/>
-                                        <NewsCard img={img3}/>
-                                    </div>
-                                </section>
-                            </div>
-                            <NewsList/>
+                    <div className={'flex items-start justify-between mt-10'}>
+                        <div>
+                            <section className={' w-full'}>
+                                <div className="flex items-center font-bold text-2xl mb-4">
+                                    <h1 className="mr-2">Актуально</h1>
+                                </div>
+                                <div className={'flex items-center gap-4 flex-wrap'}>
+                                    <NewsSlider/>
+                                </div>
+                            </section>
+                            <section className={'mt-10 w-full'}>
+                                <div className="flex items-center font-bold text-2xl mb-4">
+                                    <h1 className="mr-2">Дагестан</h1>
+                                </div>
+                                <div className={'flex items-center gap-4 flex-wrap'}>
+                                    <NewsCard img={img1}/>
+                                    <NewsCard img={img2}/>
+                                    <NewsCard img={img3}/>
+                                </div>
+                            </section>
                         </div>
+                        <NewsList/>
+                    </div>
                     <div className={'flex items-start'}>
                         <section className={'mt-10 w-full'}>
                             <div className="flex items-center font-bold text-2xl mb-4">
@@ -58,6 +60,9 @@ function App() {
                         </section>
                         <NewsLine/>
                     </div>
+                    <section className={'flex items-start gap-4 flex-wrap mt-10 h-[65vh]'}>
+                        <FreshNews array={array}/>
+                    </section>
                 </Container>
             </main>
             <Footer/>

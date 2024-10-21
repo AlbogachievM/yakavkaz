@@ -46,7 +46,7 @@ export const NewsList = () => {
         <div className="max-w-[310px] p-4 rounded shadow">
             <div className={'flex items-center gap-3 mb-4'}>
                 <h2 className="text-[16px] font-semibold">Лента новостей</h2>
-                <input type={'date'}/>
+                <input type="date" value="2024-10-21" className={'cursor-pointer'}/>
             </div>
             <ul className="space-y-4">
                 {news.map((item, index) => (
