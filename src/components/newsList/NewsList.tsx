@@ -15,6 +15,14 @@ export const NewsList = () => {
             time: "17 окт. 2024 11:09",
             title:
                 "Россияне всё чаще выбирают Махачкалу для отдыха в ноябрьские праздники",
+        },  {
+            time: "17 окт. 2024 11:09",
+            title:
+                "Россияне всё чаще выбирают Махачкалу для отдыха в ноябрьские праздники",
+        },  {
+            time: "17 окт. 2024 11:09",
+            title:
+                "Россияне всё чаще выбирают Махачкалу для отдыха в ноябрьские праздники",
         },
         {
             time: "17 окт. 2024 11:00",
@@ -35,7 +43,7 @@ export const NewsList = () => {
     ];
 
     return (
-        <div className="max-w-[300px] p-4 rounded shadow">
+        <div className="max-w-[310px] p-4 rounded shadow">
             <div className={'flex items-center gap-3 mb-4'}>
                 <h2 className="text-[16px] font-semibold">Лента новостей</h2>
                 <input type={'date'}/>

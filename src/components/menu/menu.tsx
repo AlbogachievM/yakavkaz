@@ -18,7 +18,7 @@ export const Menu = ({isOpen = true, className = ''}: Props) => {
                                     <ul>
                                         {menuItem.submenu.map((submenuItem, subIndex) => {
                                             return (
-                                                <li key={subIndex}>{submenuItem}</li>
+                                                <li key={subIndex}><a href="#">{submenuItem}</a></li>
                                             )
                                         })}
                                     </ul>

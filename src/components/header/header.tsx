@@ -16,7 +16,7 @@ export const Header = ({className}: Props) => {
         <header className={`text-end text-white bg-black relative ${className}`}>
             <Container>
                 <div className={'flex items-center gap-4 pb-4'}>
-                    <img src={logo} width={'50px'}/>
+                    <img src={logo} width={'50px'} alt={'logo'}/>
                     <div className={'flex flex-col gap-1 w-full'}>
                         <div className={'flex justify-between'}>
                             <div className={'flex items-center gap-2'}>
@@ -24,7 +24,7 @@ export const Header = ({className}: Props) => {
                                 <span className={'text-white font-bold text-[20px] uppercase'}>Новости</span>
                             </div>
                             <button
-                                className={' w-[150px] text-[14px]'}>Республика
+                                className={'w-[150px] text-[14px]'}>Республика
                                 Дагестан
                             </button>
                         </div>
