@@ -7,7 +7,7 @@ type Props = {
 export const Menu = ({isOpen}: Props) => {
     return (
         <>
-            {isOpen && <menu className={'bg-black left-0 absolute w-full  z-[10000] pt-4 pb-8'}>
+            {isOpen && <menu className={'bg-black left-0 absolute w-full  z-[10000] pt-4 pb-8 shadow-lg'}>
                 <Container>
                     <div className={'flex text-left gap-5 items-start flex-wrap'}>
                         {menuItems.map((menuItem, subIndex) => {

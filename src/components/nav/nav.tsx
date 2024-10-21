@@ -111,13 +111,13 @@ export const Nav = () => {
                     className="relative"
 
                 >
-                    {/* Основной элемент меню */}
+
                     <a href="#" className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
                         {item.title}
                     </a>
-                    {/* Подменю */}
-                    {activeIndex === index && ( // Если текущий элемент активен, показать подменю
-                        <div className="absolute top-6 left-[50%] translate-x-[-50%] p-2 flex flex-col bg-black z-40 min-w-max"
+
+                    {activeIndex === index && (
+                        <div className="absolute top-6 left-[50%] translate-x-[-50%] p-2 flex flex-col bg-black z-40 min-w-max shadow-lg"
                              onMouseLeave={handleMouseLeave}>
                             {item.submenu.map((submenuItem, subIndex) => (
                                 <a key={subIndex} href="#" className="block w-full p-1 text-white text-center hover:opacity-80">
