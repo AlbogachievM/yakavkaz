@@ -5,6 +5,7 @@ import {Container} from "@/components/container/container.tsx";
 import NewsCard from './components/newsCard/NewsCard';
 import {NewsList} from "@/components/newsList/NewsList.tsx";
 import {NewsSlider} from "@/components/newsSlider/NewsSlider.tsx";
+import { Footer } from './components/footer/footer';
 
 function App() {
 
@@ -48,8 +49,8 @@ function App() {
                             </div>
                         </section>
                 </Container>
-
             </main>
+            <Footer />
         </div>
     )
 }

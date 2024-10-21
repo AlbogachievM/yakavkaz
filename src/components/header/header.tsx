@@ -42,7 +42,7 @@ export const Header = ({className}: Props) => {
                         </div>
                     </div>
                 </div>
-               <Menu isOpen={isOpen}/>
+               <Menu className={'left-0 absolute  z-[1000]  pt-4 pb-8'} isOpen={isOpen}/>
             </Container>
         </header>
     );

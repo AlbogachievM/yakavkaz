@@ -2,12 +2,13 @@ import {menuItems} from "@/components/nav/nav.tsx";
 import {Container} from "@/components/container/container.tsx";
 
 type Props = {
-    isOpen: boolean
+    isOpen?: boolean
+    className?: string
 }
-export const Menu = ({isOpen}: Props) => {
+export const Menu = ({isOpen = true, className = ''}: Props) => {
     return (
         <>
-            {isOpen && <menu className={'bg-black left-0 absolute w-full  z-[10000] pt-4 pb-8 shadow-lg'}>
+            {isOpen && <menu className={`bg-black w-full shadow-lg ${className}`}>
                 <Container>
                     <div className={'flex text-left gap-5 items-start flex-wrap'}>
                         {menuItems.map((menuItem, subIndex) => {
