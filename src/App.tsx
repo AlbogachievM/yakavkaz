@@ -6,7 +6,12 @@ import NewsCard from './components/newsCard/NewsCard';
 import {NewsList} from "@/components/newsList/NewsList.tsx";
 import {NewsSlider} from "@/components/newsSlider/NewsSlider.tsx";
 import { Footer } from './components/footer/footer';
-
+import img1 from '/src/assets/news/11.jpg'
+import img2 from '/src/assets/news/12.jpg'
+import img3 from '/src/assets/news/13.jpg'
+import img4 from '/src/assets/news/14.jpg'
+import img5 from '/src/assets/news/15.jpg'
+import img6 from '/src/assets/news/16.jpg'
 function App() {
 
     return (
@@ -30,9 +35,9 @@ function App() {
                                         <h1 className="mr-2">Дагестан</h1>
                                     </div>
                                     <div className={'flex items-center gap-4 flex-wrap'}>
-                                        <NewsCard/>
-                                        <NewsCard/>
-                                        <NewsCard/>
+                                        <NewsCard img={img1}/>
+                                        <NewsCard img={img2}/>
+                                        <NewsCard img={img3}/>
                                     </div>
                                 </section>
                             </div>
@@ -43,9 +48,9 @@ function App() {
                                 <h1 className="mr-2">Другие регионы</h1>
                             </div>
                             <div className={'flex items-center gap-4 flex-wrap'}>
-                                <NewsCard/>
-                                <NewsCard/>
-                                <NewsCard/>
+                                <NewsCard img={img4}/>
+                                <NewsCard img={img5}/>
+                                <NewsCard img={img6}/>
                             </div>
                         </section>
                 </Container>
