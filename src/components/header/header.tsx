@@ -30,7 +30,7 @@ export const Header = ({className}: Props) => {
                         </div>
                         <div className={'flex items-center justify-between gap-4'}>
                             <div className={'flex items-center gap-4'}>
-                                <MenuBurger callback={setIsOpen}  isOpen={isOpen}/>
+                                <MenuBurger callback={setIsOpen} isOpen={isOpen}/>
                                 <Nav/>
                             </div>
                             <div className={'flex items-center gap-4'}>

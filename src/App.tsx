@@ -2,19 +2,15 @@ import './App.css'
 import {Header} from "@/components/header/header.tsx";
 import {TopNews} from "@/components/topNews/topNews.tsx";
 import {Container} from "@/components/container/container.tsx";
-import NewsCard from './components/newsCard/NewsCard';
+import {NewsCard} from './components/newsCard/NewsCard';
 import {NewsList} from "@/components/newsList/NewsList.tsx";
 import {NewsSlider} from "@/components/newsSlider/NewsSlider.tsx";
 import {Footer} from './components/footer/footer';
-import img1 from '/src/assets/news/11.jpg'
-import img2 from '/src/assets/news/12.jpg'
-import img3 from '/src/assets/news/13.jpg'
-import img4 from '/src/assets/news/14.jpg'
-import img5 from '/src/assets/news/15.jpg'
-import img6 from '/src/assets/news/16.jpg'
 import {NewsLine} from "@/components/newsLine/NewsLine.tsx";
 import {FreshNews} from "@/components/freshNews/FreshNews.tsx";
 import {array} from "@/components/freshNews/array.ts";
+import {newsCardArray} from "@/components/newsCard/newsCardArray.ts";
+import {newsCardArray2} from "@/components/newsCard/newsCardArray2.ts";
 
 function App() {
 
@@ -39,9 +35,7 @@ function App() {
                                     <h1 className="mr-2">Дагестан</h1>
                                 </div>
                                 <div className={'flex items-center gap-4 flex-wrap'}>
-                                    <NewsCard img={img1}/>
-                                    <NewsCard img={img2}/>
-                                    <NewsCard img={img3}/>
+                                    <NewsCard newsArray={newsCardArray}/>
                                 </div>
                             </section>
                         </div>
@@ -53,14 +47,12 @@ function App() {
                                 <h1 className="mr-2">Другие регионы</h1>
                             </div>
                             <div className={'flex items-center gap-4 flex-wrap'}>
-                                <NewsCard img={img4}/>
-                                <NewsCard img={img5}/>
-                                <NewsCard img={img6}/>
+                                <NewsCard newsArray={newsCardArray2}/>
                             </div>
                         </section>
                         <NewsLine/>
                     </div>
-                    <section className={'flex items-start gap-4 flex-wrap mt-10 h-[65vh]'}>
+                    <section className={'flex items-start gap-4 flex-wrap mt-10 h-[70vh]'}>
                         <FreshNews array={array}/>
                     </section>
                 </Container>
