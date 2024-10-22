@@ -7,11 +7,11 @@ export const Footer = () => {
         <footer className={'text-white mt-20 pt-10 pb-10 bg-black w-full'}>
             <Container>
                 <div className={'flex items-start gap-5'}>
+                    <Menu/>
                     <div className={'flex flex-col items-center relative'}>
                         <img src={logo} alt="" className={'w-[100px]'}/>
-                        <span className={'text-red-600 font-bold text-[70px] uppercase rotate-[-90deg] absolute top-[100%] translate-y-[150%] flex'}><span className={'text-white'}>Я</span>КАВКАЗ</span>
+                        <span className={'text-red-600 font-bold text-[70px] uppercase rotate-[90deg] absolute top-[100%] translate-y-[150%] right-50 translate-x-[2%] flex'}><span className={'text-white'}>ЯК</span>АВКАЗ</span>
                     </div>
-                    <Menu/>
 
                 </div>
             </Container>
