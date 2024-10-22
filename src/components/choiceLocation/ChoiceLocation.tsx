@@ -1,9 +1,9 @@
 import dag from '/src/assets/location/dagestan.jpg';
-import chech from '/src/assets/location/dagestan.jpg';
-import kb from '/src/assets/location/dagestan.jpg';
-import kr from '/src/assets/location/dagestan.jpg';
+import chech from '/src/assets/location/chech.jpg';
+import kb from '/src/assets/location/kb.jpg';
+import kr from '/src/assets/location/kr.jpg';
 import ing from '/src/assets/location/ingush.jpg';
-import oset from '/src/assets/location/ingush.jpg';
+import oset from '/src/assets/location/osetia.png';
 import logo from '/src/assets/img/logo.png';
 import close from '/src/assets/img/close.svg'
 import {Container} from "@/components/container/container.tsx";
@@ -14,7 +14,7 @@ export type Region =
     | ' Дагестан'
     | ' Кабардино-Балкария'
     | ' Карачаева-Черкессия'
-    | ' Северная Осетия';
+    | ' Северная-Осетия';
 
 export type Props = {
     isShow?: boolean;
@@ -31,7 +31,7 @@ export const regions: Region[] = [
     ' Дагестан',
     ' Кабардино-Балкария',
     ' Карачаева-Черкессия',
-    ' Северная Осетия',
+    ' Северная-Осетия',
 ];
 
 export const backgroundImages: Record<Region, string> = {
@@ -40,7 +40,7 @@ export const backgroundImages: Record<Region, string> = {
     ' Дагестан': dag,
     ' Кабардино-Балкария': kb,
     ' Карачаева-Черкессия': kr,
-    ' Северная Осетия': oset,
+    ' Северная-Осетия': oset,
 };
 
 export const ChoiceLocation = ({ isShow = true, callback, hoveredRegion, setHoveredRegion, selectedRegion, setSelectedRegion }: Props) => {
