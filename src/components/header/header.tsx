@@ -5,11 +5,14 @@ import {Nav} from "@/components/nav/nav.tsx";
 import {MenuBurger} from "@/components/menuBurger/menuBurger.tsx";
 import {useState} from "react";
 import {Menu} from "@/components/menu/menu.tsx";
+import {Region} from "@/components/choiceLocation/ChoiceLocation.tsx";
 
 type Props = {
     className?: string
+    callback:()=> void
+    name: Region | null
 }
-export const Header = ({className}: Props) => {
+export const Header = ({className, callback, name}: Props) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -17,15 +20,16 @@ export const Header = ({className}: Props) => {
             <Container>
                 <div className={'flex items-center gap-4 pb-4'}>
                     <img src={logo} width={'50px'} alt={'logo'}/>
-                    <div className={'flex flex-col gap-1 w-full'}>
+                    <div className={'flex flex-col gap-2 w-full'}>
                         <div className={'flex justify-between'}>
                             <div className={'flex items-center gap-2'}>
                                 <span className={'text-red-600 font-bold text-[20px] uppercase'}>ЯКАВКАЗ</span>
                                 <span className={'text-white font-bold text-[20px] uppercase'}>Новости</span>
                             </div>
                             <button
-                                className={'w-[150px] text-[14px]'}>Республика
-                                Дагестан
+                                onClick={callback}
+                                className={'text-[14px] border-b'}>Республика
+                                {name}
                             </button>
                         </div>
                         <div className={'flex items-center justify-between gap-4'}>

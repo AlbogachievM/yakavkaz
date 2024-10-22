@@ -12,7 +12,6 @@ export const Footer = () => {
                         <img src={logo} alt="" className={'w-[100px]'}/>
                         <span className={'text-red-600 font-bold text-[70px] uppercase rotate-[90deg] absolute top-[100%] translate-y-[150%] right-50 translate-x-[2%] flex'}><span className={'text-white'}>ЯК</span>АВКАЗ</span>
                     </div>
-
                 </div>
             </Container>
         </footer>
