@@ -68,7 +68,7 @@ export const ChoiceLocation = ({ isShow = true, callback, hoveredRegion, setHove
             style={{
                 backgroundImage: `url(${backgroundImages[activeRegion || ' Дагестан']})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: 'center center',
                 backgroundRepeat: 'no-repeat',
             }}
         >
