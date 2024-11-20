@@ -109,10 +109,10 @@ export const Nav = () => {
                 >
 
                     {item.link ?
-                        <a href={item.link} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
+                        <a href={`#/${item.link}`} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
                             {item.title}
                         </a> :
-                        <a href={item.link} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
+                        <a href={`#/${item.link}}`} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
                             {item.title}
                         </a>
                     }
@@ -123,7 +123,7 @@ export const Nav = () => {
                             className="absolute top-6 left-[50%] translate-x-[-50%] p-2 flex flex-col bg-black z-40 min-w-max shadow-lg"
                             onMouseLeave={handleMouseLeave}>
                             {item.submenu && item.submenu.map((submenuItem, subIndex) => (
-                                <a key={subIndex} href={submenuItem.link}
+                                <a key={subIndex} href={`#${submenuItem.link}`}
                                    className="block w-full p-1 text-white text-center hover:opacity-80">
                                     {submenuItem.title}
                                 </a>
