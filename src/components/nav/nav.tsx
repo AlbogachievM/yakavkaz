@@ -11,6 +11,7 @@ export const menuItems = [
             { title: "Авиа и ЖД билеты и расписание", link: routes.transport.aviationAndRailway },
             { title: "Расписание городского транспорта", link: routes.transport.citySchedule },
             { title: "Прокат траспорта", link: routes.transport.scooterRental },
+            { title: "Заказ такси", link: routes.transport.taxiOrderPage },
             { title: "Дорожная обстановка и пробки", link: routes.transport.trafficConditions },
         ],
     },
@@ -99,7 +100,7 @@ export const Nav = () => {
     };
 
     return (
-        <nav className="flex items-center justify-between gap-4 text-[14px]">
+        <nav className="flex items-center justify-between gap-4 text-[14px] z-[99999]">
             {menuItems.map((item, index) => (
                 <div
                     key={index}

@@ -23,6 +23,7 @@ import {HealthServices} from "@/pages/healthServices.tsx";
 import {Education} from "@/pages/education.tsx";
 import {ChildrenClasses} from "@/pages/childrenClasses.tsx";
 import {AdultCourses} from "@/pages/adultCourses.tsx";
+import {TaxiOrderPage} from "@/pages/taxiOrderPage.tsx";
 
 const router = createHashRouter([
     {
@@ -40,6 +41,10 @@ const router = createHashRouter([
             {
                 path: routes.transport.aviationAndRailway,
                 element: <AviationAndRailway/>,
+            },
+            {
+                path: routes.transport.taxiOrderPage,
+                element: <TaxiOrderPage/>,
             },
             {
                 path: routes.transport.citySchedule,

@@ -1,7 +1,10 @@
+
+
 export const routes = {
     transport: {
         aviationAndRailway: "/transport/aviation-and-railway",
         citySchedule: "/transport/city-schedule",
+        taxiOrderPage: "/transport/taxi-order",
         scooterRental: "/transport/scooter-rental",
         trafficConditions: "/transport/traffic-conditions",
     },
