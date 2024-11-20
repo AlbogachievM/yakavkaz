@@ -1,4 +1,4 @@
-import {createBrowserRouter, Navigate} from "react-router-dom";
+import {createHashRouter, Navigate} from "react-router-dom";
 import {routes} from './routes';
 import App from "@/App.tsx";
 import {News} from "@/pages/news.tsx";
@@ -24,7 +24,7 @@ import {Education} from "@/pages/education.tsx";
 import {ChildrenClasses} from "@/pages/childrenClasses.tsx";
 import {AdultCourses} from "@/pages/adultCourses.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App/>,
