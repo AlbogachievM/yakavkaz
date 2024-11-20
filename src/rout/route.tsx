@@ -38,7 +38,7 @@ const router = createHashRouter([
                 element: <News/>,
             },
             {
-                path: `#/${routes.transport.aviationAndRailway}`,
+                path: routes.transport.aviationAndRailway,
                 element: <AviationAndRailway/>,
             },
             {
