@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {routes} from "@/rout/routes.ts";
 
 export const menuItems = [
     {
@@ -7,90 +8,80 @@ export const menuItems = [
     {
         title: "Транспорт",
         submenu: [
-            {title: "Авиа и ЖД билеты и расписание", link: "/transport/aviation-and-railway"},
-            {title: "Расписание городского транспорта", link: "/transport/city-schedule"},
-            {title: "Прокат траспорта", link: "/transport/scooter-rental"},
-            {title: "Дорожная обстановка и пробки", link: "/transport/traffic-conditions"},
+            { title: "Авиа и ЖД билеты и расписание", link: routes.transport.aviationAndRailway },
+            { title: "Расписание городского транспорта", link: routes.transport.citySchedule },
+            { title: "Прокат траспорта", link: routes.transport.scooterRental },
+            { title: "Дорожная обстановка и пробки", link: routes.transport.trafficConditions },
         ],
     },
     {
         title: "Проживание",
         submenu: [
-            {title: "Гостиницы", link: "/accommodation/hotels"},
-            {title: "Дома для отдыха", link: "/accommodation/vacation-homes"},
-            {title: "Санатории", link: "/accommodation/sanatoriums"},
-            {title: "Коворкинг-центры", link: "/accommodation/coworking-centers"},
+            { title: "Гостиницы", link: routes.accommodation.hotels },
+            { title: "Дома для отдыха", link: routes.accommodation.vacationHomes },
+            { title: "Санатории", link: routes.accommodation.sanatoriums },
+            { title: "Коворкинг-центры", link: routes.accommodation.coworkingCenters },
         ],
     },
     {
         title: "Еда",
         submenu: [
-            {title: "Доставка еды", link: "/food/delivery"},
-            {title: "Доставка продуктов", link: "/food/grocery-delivery"},
-            {title: "Рестораны и кафе", link: "/food/restaurants"},
-            {title: "Магазины", link: "/food/stores"},
+            { title: "Доставка еды", link: routes.food.delivery },
+            { title: "Доставка продуктов", link: routes.food.groceryDelivery },
+            { title: "Рестораны и кафе", link: routes.food.restaurants },
+            { title: "Магазины", link: routes.food.stores },
         ],
     },
     {
         title: "Туризм",
         submenu: [
-            {title: "Туристические маршруты", link: "/tourism/routes"},
-            {title: "Гиды и экскурсии", link: "/tourism/guides"},
-            {title: "Природные заповедники и парки", link: "/tourism/nature-reserves"},
-            {title: "Виртуальный музей и панорамы 360", link: "/tourism/virtual-museum"},
+            { title: "Туристические маршруты", link: routes.tourism.routes },
+            { title: "Гиды и экскурсии", link: routes.tourism.guides },
+            { title: "Природные заповедники и парки", link: routes.tourism.natureReserves },
+            { title: "Виртуальный музей и панорамы 360", link: routes.tourism.virtualMuseum },
         ],
     },
     {
-        title: 'Куда пойти?',
-        link: '/tourism/places-to-go'
+        title: "Куда пойти?",
+        link: routes.tourism.placesToGo,
     },
     {
         title: "Госуслуги",
-        link: '/government/publicServices',
-        // submenu: [
-        //     {title: "Госучреждения", link: "/government/institutions"},
-        //     {title: "Почта", link: "/government/post"},
-        //     {title: "Банки", link: "/government/banks"},
-        //     {title: "Экстренные службы", link: "/government/emergency-services"},
-        //     {title: "Пункты полиции и охранные службы", link: "/government/police"},
-        //     {title: "Пункты ЖКХ", link: "/government/utilities"},
-        //     {title: "Налоговые службы", link: "/government/tax-services"},
-        //     {title: "Нотариусы и адвокаты", link: "/government/notaries-and-lawyers"},
-        // ],
+        link: routes.government.institutions,
     },
     {
         title: "Здоровье",
         submenu: [
-            {title: "Ближайшие аптеки", link: "/health/pharmacies"},
-            {title: "Больницы и клиники", link: "/health/hospitals"},
-            {title: "Спортивные залы и секции", link: "/health/sports"},
-            {title: "Спортивные мероприятия", link: "/health/events"},
+            { title: "Ближайшие аптеки", link: routes.health.pharmacies },
+            { title: "Больницы и клиники", link: routes.health.hospitals },
+            { title: "Спортивные залы и секции", link: routes.health.sports },
+            { title: "Спортивные мероприятия", link: routes.health.events },
         ],
     },
     {
         title: "Образование",
         submenu: [
-            {title: "Учебные заведения", link: "/education/institutions"},
-            {title: "Кружки и секции для детей", link: "/education/children-classes"},
-            {title: "Курсы и тренинги для взрослых", link: "/education/adult-courses"},
+            { title: "Учебные заведения", link: routes.education.institutions },
+            { title: "Кружки и секции для детей", link: routes.education.childrenClasses },
+            { title: "Курсы и тренинги для взрослых", link: routes.education.adultCourses },
         ],
     },
     {
         title: "Бытовые услуги",
         submenu: [
-            {title: "Чистка и ремонт одежды", link: "/services/clothing-repair"},
-            {title: "Ремонт техники", link: "/services/device-repair"},
-            {title: "Пункты переработки отходов", link: "/services/recycling"},
-            {title: "Доставка воды", link: "/services/water-and-gas"},
-            {title: "Доска объявлений и услуг", link: "/services/classifieds"},
+            { title: "Чистка и ремонт одежды", link: routes.services.clothingRepair },
+            { title: "Ремонт техники", link: routes.services.deviceRepair },
+            { title: "Пункты переработки отходов", link: routes.services.recycling },
+            { title: "Доставка воды", link: routes.services.waterAndGas },
+            { title: "Доска объявлений и услуг", link: routes.services.classifieds },
         ],
     },
     {
         title: "Мобильные сервисы",
         submenu: [
-            {title: "Приложение для скачивания", link: "/mobile/app-download"},
-            {title: "Wi-Fi точки доступа", link: "/mobile/wifi-access"},
-            {title: "Мобильные операторы и точки пополнения счета", link: "/mobile/operators"},
+            { title: "Приложение для скачивания", link: routes.mobile.appDownload },
+            { title: "Wi-Fi точки доступа", link: routes.mobile.wifiAccess },
+            { title: "Мобильные операторы и точки пополнения счета", link: routes.mobile.operators },
         ],
     },
 ];
