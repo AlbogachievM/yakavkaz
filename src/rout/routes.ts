@@ -1,9 +1,9 @@
 export const routes = {
     transport: {
-        aviationAndRailway: "/transport/aviation-and-railway",
-        citySchedule: "/transport/city-schedule",
-        scooterRental: "/transport/scooter-rental",
-        trafficConditions: "/transport/traffic-conditions",
+        aviationAndRailway: "#/transport/aviation-and-railway",
+        citySchedule: "#/transport/city-schedule",
+        scooterRental: "#/transport/scooter-rental",
+        trafficConditions: "#/transport/traffic-conditions",
     },
     accommodation: {
         hotels: "/accommodation/hotels",
