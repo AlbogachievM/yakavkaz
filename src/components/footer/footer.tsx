@@ -1,5 +1,5 @@
 import {Menu} from "../menu/menu";
-import logo from '/src/assets/img/logo.png'
+import logo from '/src/assets/img/yaing-logo.png'
 import {Container} from "@/components/container/container.tsx";
 
 export const Footer = () => {
@@ -10,7 +10,7 @@ export const Footer = () => {
                     <Menu/>
                     <div className={'flex flex-col items-center relative'}>
                         <img src={logo} alt="" className={'w-[100px]'}/>
-                        <span className={'text-red-600 font-bold text-[70px] uppercase rotate-[90deg] absolute top-[100%] translate-y-[150%] right-50 translate-x-[2%] flex'}><span className={'text-white'}>ЯК</span>АВКАЗ</span>
+                        <span className={'text-red-600 font-bold text-[70px] uppercase rotate-[90deg] absolute top-[100%] translate-y-[100%] right-50 translate-x-[2%] flex'}><span className={'text-white'}>YA</span>ИНГ</span>
                     </div>
                 </div>
             </Container>

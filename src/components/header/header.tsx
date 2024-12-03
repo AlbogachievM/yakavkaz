@@ -1,4 +1,4 @@
-import logo from '/src/assets/img/logo.png'
+import logo from '/src/assets/img/yaing-logo.png'
 import {Container} from "@/components/container/container.tsx";
 import svg from '/src/assets/img/search.svg'
 import {Nav} from "@/components/nav/nav.tsx";
@@ -23,7 +23,7 @@ export const Header = ({className, callback, name}: Props) => {
                     <div className={'flex flex-col gap-2 w-full'}>
                         <div className={'flex justify-between'}>
                             <div className={'flex items-center gap-2'}>
-                                <span className={'text-red-600 font-bold text-[20px] uppercase'}><span className={'text-white'}>ЯК</span>АВКАЗ</span>
+                                <span className={'text-red-600 font-bold text-[20px] uppercase'}><span className={'text-white'}>YA</span>ИНГ</span>
                                 <span className={'text-white font-bold text-[20px] uppercase'}>Новости</span>
                             </div>
                             <button
