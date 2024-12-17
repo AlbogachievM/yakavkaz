@@ -1,6 +1,6 @@
-import {menuItems} from "@/components/nav/nav.tsx";
 import {Container} from "@/components/container/container.tsx";
 import svg from "@/assets/img/search.svg";
+import {menuItems} from "@/db/menuItems.ts";
 
 type Props = {
     isOpen?: boolean
