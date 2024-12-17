@@ -3,6 +3,7 @@ import {useState} from "react";
 export const menuItems = [
     {
         title: "Регион",
+        link: "/my-way",
     },
     {
         title: "Транспорт",
@@ -118,12 +119,12 @@ export const Nav = () => {
                 >
 
                     {item.link ?
-                        <a href={item.link} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
+                        <a href={item.link} className={`${activeIndex === index && "border-b-[1px]"} cursor-pointer uppercase`}>
                             {item.title}
                         </a> :
-                        <a href={item.link} className={`${activeIndex === index && "border-b-[1px]"} uppercase`}>
+                        <span  className={`${activeIndex === index && "border-b-[1px]"} cursor-default uppercase`}>
                             {item.title}
-                        </a>
+                        </span>
                     }
 
 
