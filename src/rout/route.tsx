@@ -23,6 +23,7 @@ import {HealthServices} from "@/pages/healthServices.tsx";
 import {Education} from "@/pages/education.tsx";
 import {ChildrenClasses} from "@/pages/childrenClasses.tsx";
 import {AdultCourses} from "@/pages/adultCourses.tsx";
+import {MyPathModule} from "@/pages/myPathModule.tsx";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: routes.transport.aviationAndRailway,
                 element: <AviationAndRailway/>,
+            },
+            {
+                path: routes.region,
+                element: <MyPathModule/>,
             },
             {
                 path: routes.transport.citySchedule,

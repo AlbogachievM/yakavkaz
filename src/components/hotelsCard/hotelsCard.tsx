@@ -32,7 +32,7 @@ export const HotelsCard = ({title, price, subtitle, description, img, variant ='
         <div className={`text-black flex justify-between border rounded-lg p-2 mt-5 w-[${width}px]`}>
             <div className={'flex gap-9'}>
                 <div>
-                    <img className={'rounded-lg '} src={img} alt="" width={400} />
+                    <img className={'rounded-lg '} src={img} alt="" width={400}/>
                 </div>
                 <div className={'flex flex-col gap-1'}>
                     <span className={'text-blue-600 text-[20px] font-bold'}>{title}</span>

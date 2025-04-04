@@ -1,4 +1,5 @@
 export const routes = {
+    region:'my-way',
     transport: {
         aviationAndRailway: "transport/aviation-and-railway",
         citySchedule: "transport/city-schedule",
