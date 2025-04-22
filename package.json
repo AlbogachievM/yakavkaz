@@ -2,7 +2,7 @@
   "name": "yakavkaz",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://AlbogachievM.github.io/yakavkaz/",
+  "homepage": "https://albogachiev.github.io/yakavkaz/",
   "type": "module",
   "scripts": {
     "dev": "vite",

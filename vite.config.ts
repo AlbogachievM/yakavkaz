@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [react(),  tsconfigPaths()],
-  base:'/yakavkaz/',
+  base:'/yakavkaz',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
